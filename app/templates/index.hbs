@@ -1,8 +1,14 @@
 {{page-title "Index"}}
 {{outlet}}
 
-adf
-<div data-sb-object-id="public/pages/index.json">
-<h1 data-sb-field-path="title">{{this.model.title}}</h1>
-Field
+<Navbar/>
+
+<div class="container mx-auto">
+  <div class="prose">
+  <div data-sb-object-id="public/pages/index.json">
+    <h1 data-sb-field-path="title">{{this.model.title}}</h1>
+    Answer:
+    <div data-sb-field-path="content">{{this.model.content}}</div>
+  </div>
+  </div>
 </div>

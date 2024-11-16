@@ -24,15 +24,18 @@ export default defineStackbitConfig({
           type: "page",
           urlPath: "/{slug}",
           filePath: "public/pages/{slug}.json",
-          fields: [{ name: "title", type: "string", required: true }]
+          fields: [{ name: "title", type: "string", required: true },
+                      { name: "content", type: "text", required: true }
+]
         },
                 {
           name: "People",
           type: "data",
           filePath: "public/data/{slug}.json",
-          fields: [{ name: "title", type: "string", required: true }]
+          fields: [
+            { name: "title", type: "string", required: true }
+          ]
         }
-
       ],
       assetsConfig: {
         referenceType: "static",
