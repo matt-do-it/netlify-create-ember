@@ -6,5 +6,12 @@ export default defineStackbitConfig({
     "ssgName": "custom",
     "devCommand": "yarn ember serve --port={PORT}",
     "contentSources": [],
-    "postInstallCommand": "npm i --no-save @stackbit/types"
+    "postInstallCommand": "npm i --no-save @stackbit/types",
+    experimental: {
+    ssg: {
+      name: "ember",
+      logPatterns: { up: ["Serving on"] },
+      passthrough: []
+    }
+  }
 })
