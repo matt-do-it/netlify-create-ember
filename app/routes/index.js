@@ -1,12 +1,10 @@
 import Route from '@ember/routing/route';
-import fetch from 'fetch';
 import { service } from '@ember/service';
 
 export default class IndexRoute extends Route {
-  @service store;
+  @service router;
 
-  async model() {
-    let record = await this.store.findRecord('page', 'index');
-    return record;
+  beforeModel(/* transition */) {
+    this.router.transitionTo('page', 'index'); // Implicitly aborts the on-going transition.
   }
 }

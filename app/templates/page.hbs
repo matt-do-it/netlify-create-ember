@@ -1,0 +1,26 @@
+{{page-title "Index"}}
+{{outlet}}
+
+<Navbar/>
+
+<div class="container mx-auto">
+  <div class="prose">
+  <div data-sb-object-id="content/pages/{{this.model.page.id}}.md">
+    <h1 data-sb-field-path="title">{{this.model.page.title}}</h1>
+    Answer:
+    <div data-sb-field-path="markdown_content">{{{this.model.page.html}}}</div>
+  </div>
+  </div>
+</div>
+
+
+<div class="container mx-auto">
+  <h2>All pages</h2>
+  <div class="prose">
+    <ul>
+    {{#each this.model.allPages as |page|}}
+        <li><LinkTo @route="page" @model={{page.id}}>{{page.title}}</LinkTo></li>
+    {{/each}}
+    </ul>
+  </div>
+</div>

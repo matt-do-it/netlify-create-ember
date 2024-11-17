@@ -5751,6 +5751,14 @@ ember-fetch@^8.1.2:
     node-fetch "^2.6.1"
     whatwg-fetch "^3.6.2"
 
+ember-inflector@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.npmjs.org/ember-inflector/-/ember-inflector-5.0.2.tgz#785c05ebaa79307ccc364e0217271531fc353138"
+  integrity sha512-aoPaT7B3pbUHSi4ulf02iRaMMvPteuDBO8jA1SLLOl/JwnO2YI5F/MhNPaolxp8DWwAd/P6MNN+wD5bLwmiUIA==
+  dependencies:
+    "@embroider/addon-shim" "^1.8.7"
+    decorator-transforms "^2.0.0"
+
 ember-load-initializers@^2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/ember-load-initializers/-/ember-load-initializers-2.1.2.tgz#8a47a656c1f64f9b10cecdb4e22a9d52ad9c7efa"

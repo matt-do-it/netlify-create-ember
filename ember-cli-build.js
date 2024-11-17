@@ -4,7 +4,7 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 const StaticSiteJson = require('broccoli-static-site-json');
 
-const pageTree = new StaticSiteJson('pages', {
+const pageTree = new StaticSiteJson('content/pages', {
   type: 'page',
   attributes: [
     'canonical',

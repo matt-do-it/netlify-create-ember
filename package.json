@@ -89,6 +89,7 @@
   "dependencies": {
     "@stackbit/cms-git": "^1.0.26",
     "@stackbit/types": "^2.1.8",
-    "broccoli-static-site-json": "^5.0.0"
+    "broccoli-static-site-json": "^5.0.0",
+    "ember-inflector": "^5.0.2"
   }
 }
