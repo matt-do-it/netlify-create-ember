@@ -20,6 +20,7 @@ const pageTree = new StaticSiteJson('content/pages', {
     'page',
     'status',
     'title',
+    'subline',
     'uuid',
   ],
   contentFolder: 'pages',

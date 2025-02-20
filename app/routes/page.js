@@ -14,6 +14,9 @@ export default class IndexRoute extends Route {
     return hash({
       page: this.store.findRecord('page', pageId),
       allPages: this.store.findAll('page'),
+    }).then(function(e) {
+      console.log(e.page.date);
+      return e;
     });
   }
 }

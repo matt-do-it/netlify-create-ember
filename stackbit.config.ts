@@ -25,7 +25,9 @@ export default defineStackbitConfig({
           urlPath: "/page/{slug}",
           filePath: "content/pages/{slug}.md",
           fields: [
-            { name: "title", type: "string", required: true }
+            { name: "title", type: "string", required: true },
+            { name: "subline", type: "string", required: true },
+            { name: 'image', type: 'image' }
           ]
         },
                 {
@@ -40,7 +42,7 @@ export default defineStackbitConfig({
       assetsConfig: {
         referenceType: "static",
         staticDir: "public",
-        uploadDir: "images",
+        uploadDir: "assets/images",
         publicPath: "/"
       }
     })
