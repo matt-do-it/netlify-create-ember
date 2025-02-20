@@ -1,6 +1,6 @@
 ---
 type: Page
-title: Headline 5
+title: Index
 subline: Subline
 image: /assets/images/stage.jpg
 ---
